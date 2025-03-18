@@ -23,6 +23,8 @@ public class BuildingServiceImp implements BuildingService{
 			buildingDTO.setWard(item.getWard());
 			buildingDTO.setAdress(item.getStreet());
 			buildingDTO.setNumberOfBasement(item.getNumberOfBasement());
+			buildingDTO.setStaffName(item.getStaffName());
+			buildingDTO.setPhone(item.getPhone());
 			result.add(buildingDTO);
 		}
 		return result;

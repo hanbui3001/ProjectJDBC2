@@ -5,6 +5,8 @@ public class BuildingDTO {
 	private int numberOfBasement;
 	private String ward;
 	private String adress;
+	private String staffName;
+	private String phone;
 	public String getName() {
 		return name;
 	}
@@ -28,6 +30,18 @@ public class BuildingDTO {
 	}
 	public void setAdress(String adress) {
 		this.adress = adress;
+	}
+	public String getStaffName() {
+		return staffName;
+	}
+	public void setStaffName(String staffName) {
+		this.staffName = staffName;
+	}
+	public String getPhone() {
+		return phone;
+	}
+	public void setPhone(String phone) {
+		this.phone = phone;
 	}
 	
 	

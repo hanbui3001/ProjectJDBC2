@@ -16,6 +16,7 @@ public class BuildingRepositoryImp implements BuildingRepositoy{
 	static final String DB_URL = "jdbc:mysql://localhost:3306/estatebasic";
     static final String USER = "root";
     static final String PASS = "300105";
+
 	@Override
 	public List<BuildingEntity> findAll(String name, Long district) {
     	StringBuilder sql = new StringBuilder("SELECT * FROM building  where 1 = 1 ");
@@ -33,6 +34,8 @@ public class BuildingRepositoryImp implements BuildingRepositoy{
     				building.setWard(rs.getString("ward"));
     				building.setStreet(rs.getString("street"));
     				building.setNumberOfBasement(rs.getInt("numberofbasement"));
+    				building.setStaffName(rs.getString("managername"));
+    				building.setPhone(rs.getString("managerphonenumber"));
     				result.add(building);
     			}
     		
