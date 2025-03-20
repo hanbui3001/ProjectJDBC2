@@ -5,8 +5,7 @@ public class BuildingEntity {
 	private int numberOfBasement;
 	private String ward;
 	private String street;
-	private String staffName;
-	private String phone;
+
 	public String getName() {
 		return name;
 	}
@@ -30,18 +29,6 @@ public class BuildingEntity {
 	}
 	public void setStreet(String street) {
 		this.street = street;
-	}
-	public String getStaffName() {
-		return staffName;
-	}
-	public void setStaffName(String staffName) {
-		this.staffName = staffName;
-	}
-	public String getPhone() {
-		return phone;
-	}
-	public void setPhone(String phone) {
-		this.phone = phone;
 	}
 	
 }
