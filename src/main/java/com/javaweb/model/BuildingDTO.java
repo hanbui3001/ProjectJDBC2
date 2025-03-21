@@ -2,34 +2,67 @@ package com.javaweb.model;
 
 public class BuildingDTO {
 	private String name;
-	private int numberOfBasement;
-	private String ward;
-	private String adress;
+	private String managerName;
+	private String phoneManagerNumber;
+	private String Adress;
+	private Long floorArea;
+	private Long rentArea;
+	private Long rentPrice;
+	private String serviceFee;
+	private String brokeragefee;
 	public String getName() {
 		return name;
 	}
 	public void setName(String name) {
 		this.name = name;
 	}
-	public int getNumberOfBasement() {
-		return numberOfBasement;
+	public String getManagerName() {
+		return managerName;
 	}
-	public void setNumberOfBasement(int numberOfBasement) {
-		this.numberOfBasement = numberOfBasement;
+	public void setManagerName(String managerName) {
+		this.managerName = managerName;
 	}
-	public String getWard() {
-		return ward;
+	public String getPhoneManagerNumber() {
+		return phoneManagerNumber;
 	}
-	public void setWard(String ward) {
-		this.ward = ward;
+	public void setPhoneManagerNumber(String phoneManagerNumber) {
+		this.phoneManagerNumber = phoneManagerNumber;
+	}
+	public Long getFloorArea() {
+		return floorArea;
+	}
+	public void setFloorArea(Long floorArea) {
+		this.floorArea = floorArea;
+	}
+	public Long getRentArea() {
+		return rentArea;
+	}
+	public void setRentArea(Long rentArea) {
+		this.rentArea = rentArea;
+	}
+	public Long getRentPrice() {
+		return rentPrice;
+	}
+	public void setRentPrice(Long rentPrice) {
+		this.rentPrice = rentPrice;
+	}
+	public String getServiceFee() {
+		return serviceFee;
+	}
+	public void setServiceFee(String serviceFee) {
+		this.serviceFee = serviceFee;
+	}
+	public String getBrokeragefee() {
+		return brokeragefee;
+	}
+	public void setBrokeragefee(String brokeragefee) {
+		this.brokeragefee = brokeragefee;
 	}
 	public String getAdress() {
-		return adress;
+		return Adress;
 	}
 	public void setAdress(String adress) {
-		this.adress = adress;
+		Adress = adress;
 	}
-
-	
 	
 }
